@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estación Mate | Un mate diferente</title>
+  <meta name="description" content="Catálogo de mates, bombillas y yerbas. Estilo rústico y natural.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Tipografías: título rústico + texto limpio -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a href="#" class="brand">
+        <img src="assets/logo-estacion-mate.jpg" alt="Logo Estación Mate">
+        <span>Estación Mate</span>
+      </a>
+      <nav class="nav">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#sobre">Sobre nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/59178225668?text=Hola%20Estaci%C3%B3n%20Mate%2C%20quiero%20hacer%20un%20pedido.">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content container">
+      <img class="hero-logo" src="assets/logo-estacion-mate.jpg" alt="Logo Estación Mate grande">
+      <h1>Un mate diferente</h1>
+      <p>Catálogo artesanal de <strong>mates</strong>, <strong>bombillas</strong> y <strong>yerbas</strong>.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#catalogo">Ver catálogo</a>
+        <a class="btn btn-outline" target="_blank" rel="noopener" href="https://wa.me/59178225668?text=Hola%20Estaci%C3%B3n%20Mate%2C%20quisiera%20información.">Escríbenos por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="catalogo" class="catalogo container">
+      <div class="section-head">
+        <h2>Catálogo</h2>
+        <div class="filters" role="tablist" aria-label="Filtrar por categoría">
+          <button class="filter active" data-filter="todo" role="tab" aria-selected="true">Todo</button>
+          <button class="filter" data-filter="mates" role="tab" aria-selected="false">Mates</button>
+          <button class="filter" data-filter="bombillas" role="tab" aria-selected="false">Bombillas</button>
+          <button class="filter" data-filter="yerbas" role="tab" aria-selected="false">Yerbas</button>
+        </div>
+      </div>
+
+      <!-- PRODUCTOS DE EJEMPLO: reemplaza las imágenes y textos libremente.
+           Para agregar nuevos, duplica un <article class="card"> y edita los data-atributos. -->
+      <div class="grid">
+        <article class="card" data-cat="mates">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1607703703672-4e8f8a14ad94?auto=format&fit=crop&w=800&q=60" alt="Mate de calabaza con virola">
+          </div>
+          <div class="card-body">
+            <h3>Mate calabaza clásico</h3>
+            <p>Calabaza curada, virola de aluminio. Cap. 180–220 ml.</p>
+            <div class="price">Bs 85</div>
+            <a class="btn btn-card" data-producto="Mate calabaza clásico" href="#">Pedir por WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="card" data-cat="mates">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1599175508475-1b3a63df8cb5?auto=format&fit=crop&w=800&q=60" alt="Mate imperial forrado en cuero">
+          </div>
+          <div class="card-body">
+            <h3>Mate imperial cuero</h3>
+            <p>Forrado en cuero, base reforzada. Incluye soporte.</p>
+            <div class="price">Bs 180</div>
+            <a class="btn btn-card" data-producto="Mate imperial cuero" href="#">Pedir por WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="card" data-cat="bombillas">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1621351455342-0eb8b38955f3?auto=format&fit=crop&w=800&q=60" alt="Bombilla de acero inoxidable">
+          </div>
+          <div class="card-body">
+            <h3>Bombilla acero inoxidable</h3>
+            <p>Rosca desmontable, 18/8. Largo 16 cm.</p>
+            <div class="price">Bs 45</div>
+            <a class="btn btn-card" data-producto="Bombilla acero inoxidable" href="#">Pedir por WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="card" data-cat="bombillas">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1621351455551-ea6b5f58c0bc?auto=format&fit=crop&w=800&q=60" alt="Bombilla pico loro">
+          </div>
+          <div class="card-body">
+            <h3>Bombilla pico de loro</h3>
+            <p>Filtro de precisión, baño de níquel.</p>
+            <div class="price">Bs 65</div>
+            <a class="btn btn-card" data-producto="Bombilla pico de loro" href="#">Pedir por WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="card" data-cat="yerbas">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=60" alt="Paquete de yerba tradicional">
+          </div>
+          <div class="card-body">
+            <h3>Yerba tradicional 500 g</h3>
+            <p>Sabor clásico, estacionado natural 12 meses.</p>
+            <div class="price">Bs 38</div>
+            <a class="btn btn-card" data-producto="Yerba tradicional 500 g" href="#">Pedir por WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="card" data-cat="yerbas">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1604951221381-b27a7e6fa90f?auto=format&fit=crop&w=800&q=60" alt="Yerba compuesta con hierbas">
+          </div>
+          <div class="card-body">
+            <h3>Yerba compuesta 1 kg</h3>
+            <p>Blend con menta y boldo. Fresca y aromática.</p>
+            <div class="price">Bs 70</div>
+            <a class="btn btn-card" data-producto="Yerba compuesta 1 kg" href="#">Pedir por WhatsApp</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="note">
+        *Estas fotos son de ejemplo. Puedes reemplazarlas por tus imágenes en la carpeta <code>/assets</code> y editar los textos directamente en <code>index.html</code>.
+      </p>
+    </section>
+
+    <section id="sobre" class="sobre">
+      <div class="container narrow">
+        <h2>Sobre Estación Mate</h2>
+        <p>Somos un emprendimiento apasionado por la cultura del mate. Seleccionamos productos de calidad con un toque rústico y natural para que disfrutes una experiencia auténtica: mates de calabaza e imperial, bombillas resistentes y yerbas seleccionadas.</p>
+        <p>Trabajamos con stock limitado y curado artesanal. Consultanos para personalizaciones y packs de regalo.</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <div class="container">
+        <h2>Contacto y redes</h2>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <h3>WhatsApp</h3>
+            <p>Atención directa por WhatsApp.</p>
+            <a class="btn btn-whatsapp" target="_blank" rel="noopener" href="https://wa.me/59178225668?text=Hola%20Estaci%C3%B3n%20Mate%2C%20quiero%20comprar.">Enviar mensaje</a>
+          </div>
+          <div class="contact-item">
+            <h3>Redes sociales</h3>
+            <ul class="social">
+              <!-- Reemplaza # por tus enlaces reales -->
+              <li><a target="_blank" rel="noopener" href="#" aria-label="Instagram">Instagram</a></li>
+              <li><a target="_blank" rel="noopener" href="#" aria-label="TikTok">TikTok</a></li>
+              <li><a target="_blank" rel="noopener" href="#" aria-label="Facebook">Facebook</a></li>
+            </ul>
+          </div>
+          <div class="contact-item">
+            <h3>Correo</h3>
+            <p><a href="mailto:contacto@estacionmate.bo">contacto@estacionmate.bo</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Estación Mate — Hecho con ❤️ en Bolivia.</p>
+    </div>
+  </footer>
+
+  <script>
+    window.EM_CONFIG = {
+      whatsapp: "59178225668"
+    };
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+# Estación Mate - Sitio estático
+
+Archivos principales:
+- `index.html` → contenido y estructura (textos, productos, enlaces).
+- `styles.css` → colores, tipografías, tamaños.
+- `script.js` → filtro por categoría y botón WhatsApp por producto.
+- `/assets/logo-estacion-mate.jpg` → tu logo (puedes reemplazarlo manteniendo el nombre).
+
+## Cambiar número de WhatsApp
+Se define en `index.html` (enlace del menú y botones) y en `window.EM_CONFIG` (para los botones por producto). Cambia `59178225668` si fuera necesario.
+
+## Agregar/editar productos
+En `index.html`, dentro del bloque `<!-- PRODUCTOS DE EJEMPLO ... -->`, duplica un `<article class="card" data-cat="...">`.
+- Cambia `data-cat` a `mates`, `bombillas` o `yerbas`.
+- Cambia la imagen `img src="..."` por la tuya (copiala a `/assets` y usa `assets/tu-foto.jpg`).
+- Cambia los textos y el precio.
+- Cambia `data-producto="Nombre del producto"` para que el WhatsApp lleve el nombre correcto.
+
+## Enlaces de redes
+Busca la sección **Contacto y redes** y reemplaza los `href="#"` por tus links reales.
+
+## Desplegar gratis (opciones)
+- **GitHub Pages**: sube estos archivos a un repositorio y activa Pages.
+- **Netlify / Vercel**: arrastra la carpeta al panel y listo.
+- **Hosting tradicional**: sube la carpeta por FTP.
+
+## Editar colores
+En `styles.css` cambia las variables CSS del inicio (`--verde`, `--marron`, etc.).
+
+// ====== Estación Mate: interacciones ======
+(function(){
+  const yearEl = document.getElementById('year');
+  if(yearEl){ yearEl.textContent = new Date().getFullYear(); }
+
+  // Filtro por categoría
+  const filters = document.querySelectorAll('.filter');
+  const cards = document.querySelectorAll('.card');
+  filters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filters.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cat = btn.dataset.filter;
+      cards.forEach(card => {
+        const c = card.getAttribute('data-cat');
+        const show = (cat === 'todo' || c === cat);
+        card.style.display = show ? '' : 'none';
+      });
+    });
+  });
+
+  // Botones de WhatsApp por producto
+  const phone = window.EM_CONFIG?.whatsapp || "59178225668";
+  const cardBtns = document.querySelectorAll('.btn-card');
+  cardBtns.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const prod = link.getAttribute('data-producto') || 'Producto';
+      const url = `https://wa.me/${phone}?text=${encodeURIComponent('Hola Estación Mate, quiero pedir: ' + prod)}`;
+      window.open(url, '_blank', 'noopener');
+    });
+  });
+})();
+
+/* ====== Estación Mate - Estilo rústico y natural ====== */
+/* Paleta */
+:root{
+  --verde: #7fa07a;       /* verde suave */
+  --verde-osc: #5e7b58;
+  --marron: #7b5e3b;
+  --crema: #f2efe6;
+  --negro: #1c1c1c;
+  --gris: #6b6b6b;
+  --blanco: #ffffff;
+}
+
+*{ box-sizing: border-box; }
+html,body{ margin:0; padding:0; }
+body{
+  font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+  color: var(--negro);
+  background: var(--crema);
+  line-height: 1.6;
+}
+
+/* Contenedores */
+.container{ width: min(1100px, 92%); margin-inline:auto; }
+.container.narrow{ width: min(900px, 92%); }
+
+/* Topbar */
+.topbar{
+  background: var(--crema);
+  position: sticky; top:0; z-index: 20;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  backdrop-filter: blur(6px);
+}
+.topbar .container{ display:flex; align-items:center; justify-content:space-between; padding: .6rem 0; }
+.brand{ display:flex; align-items:center; gap:.6rem; text-decoration:none; color:var(--negro); font-weight:700; }
+.brand img{ width: 40px; height: 40px; border-radius: 4px; object-fit: cover; }
+.nav{ display:flex; gap:1rem; align-items:center; }
+.nav a{ text-decoration:none; color:var(--negro); font-weight:600; }
+.nav a:hover{ color: var(--verde-osc); }
+
+/* Hero */
+.hero{
+  background: linear-gradient(180deg, var(--verde) 0%, #8caf87 100%);
+  color: var(--blanco);
+  text-align:center;
+  padding: 3.2rem 0 3.4rem;
+  position: relative;
+  overflow:hidden;
+}
+.hero:before{
+  content:''; position:absolute; inset:0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"160\" height=\"160\" viewBox=\"0 0 40 40\"><g fill=\"%23ffffff33\"><circle cx=\"3\" cy=\"3\" r=\"1\"/><circle cx=\"23\" cy=\"13\" r=\"1\"/><circle cx=\"13\" cy=\"33\" r=\"1\"/></g></svg>');
+  background-size: 160px 160px;
+  opacity:.25;
+  mix-blend-mode: soft-light;
+}
+.hero-logo{ width: 110px; height: 110px; border-radius: 10px; object-fit: cover; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+.hero h1{
+  font-family: 'Merriweather', serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: .8rem 0 .4rem;
+}
+.hero p{ margin: 0 auto 1.2rem; max-width: 700px; font-size: 1.05rem; }
+
+/* Botones */
+.btn{
+  display:inline-block; padding:.75rem 1.05rem; border-radius: 10px; text-decoration:none;
+  font-weight:700; border:2px solid transparent;
+}
+.btn-primary{ background: var(--marron); color: var(--blanco); }
+.btn-primary:hover{ background: #6a4f32; }
+.btn-outline{ background: transparent; color: var(--blanco); border-color: var(--blanco); }
+.btn-outline:hover{ background: rgba(255,255,255,.15); }
+.btn-whatsapp{ background: #25D366; color: #fff; }
+.btn-whatsapp:hover{ filter: brightness(0.95); }
+.btn-card{ background: var(--verde-osc); color:#fff; width: 100%; text-align:center; }
+.btn-card:hover{ filter: brightness(.95); }
+.hero-cta{ display:flex; gap:.8rem; justify-content:center; flex-wrap:wrap; }
+
+/* Secciones */
+.section-head{ display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
+.section-head h2{
+  font-family: 'Merriweather', serif;
+  margin: 1.8rem 0 0.8rem;
+}
+
+/* Filtros */
+.filters{ display:flex; gap:.5rem; }
+.filter{
+  border: 1px dashed var(--verde-osc);
+  background: #edf2ec;
+  padding: .5rem .8rem; border-radius: 999px; cursor:pointer;
+  font-weight:600;
+}
+.filter.active{ background: var(--verde-osc); color:#fff; border-color: transparent; }
+
+/* Catálogo */
+.catalogo .grid{
+  display:grid; gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  margin-top: 1rem;
+}
+.card{
+  background: #fff; border-radius: 14px; overflow:hidden;
+  box-shadow: 0 10px 24px rgba(20, 44, 24, .08);
+  display:flex; flex-direction:column; justify-content:space-between;
+}
+.card-media{ aspect-ratio: 4 / 3; overflow:hidden; }
+.card-media img{ width:100%; height:100%; object-fit:cover; display:block; }
+.card-body{ padding: .9rem .9rem 1rem; }
+.card h3{ margin:.2rem 0 .3rem; font-size:1.05rem; }
+.card p{ color: var(--gris); margin:0 0 .7rem; font-size:.95rem; }
+.price{ font-weight:800; color: var(--marron); margin-bottom: .7rem; }
+
+.note{ color: var(--gris); margin-top: 1rem; }
+
+/* Sobre */
+.sobre{
+  background: #fff;
+  padding: 2.4rem 0;
+  border-top: 1px solid rgba(0,0,0,.06);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+.sobre h2{ font-family: 'Merriweather', serif; }
+.sobre p{ margin:.5rem 0; }
+
+/* Contacto */
+.contacto{ padding: 2rem 0 2.6rem; }
+.contact-grid{
+  display:grid; gap:1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.contact-item{
+  background: #fff; padding: 1rem; border-radius: 12px; border:1px dashed #cbd5c7;
+}
+.social{ list-style:none; padding:0; margin:.6rem 0 0; display:flex; gap:.8rem; flex-wrap:wrap; }
+.social a{ font-weight:700; color: var(--verde-osc); text-decoration:none; border-bottom: 1px solid rgba(0,0,0,0.08); }
+.social a:hover{ text-decoration: underline; }
+
+/* Footer */
+.footer{ background: #f6f4ee; padding: 1.2rem 0; color:#3d3d3d; text-align:center;}
+.footer p{ margin:0; font-size:.95rem; }
+
+/* Responsivo */
+@media (max-width: 520px){
+  .nav a:not(.btn){ display:none; } /* simplificar topbar en móvil */
+  .brand span{ display:none; }
+}
